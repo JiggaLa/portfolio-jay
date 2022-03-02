@@ -1,3 +1,4 @@
+<script setup>
 import Skill from "./components/skill.vue";
 
 const skills = ref([
@@ -16,6 +17,46 @@ const skills = ref([
   "Art Direction",
   "User Experience Design",
 ]);
+
+const exps = ref([
+  {
+    period: "September 2010",
+    company: "Cetra",
+    position: "Java Developer",
+  },
+  {
+    period: "May 2017",
+    company: "DPX",
+    position: "UI/UX Designer/Frontend (remote)",
+  },
+  {
+    period: "February 2019",
+    company: "Brass",
+    position: "Front-end Developer & Product Designer",
+  },
+  {
+    period: "September 2019",
+    company: "African Pot",
+    position: "Front-end Developer / UI/UX Designer",
+  },
+  {
+    period: "October 2019",
+    company: "Otium Circle",
+    position: "Front-end Developer (remote)",
+  },
+  {
+    period: "November 2020",
+    company: "Boolean Ra",
+    position: "Front-end Developer & Product Designer (remote)",
+  },
+  {
+    period: "November 2020",
+    company: "SendAmGo",
+    position: "UI/UX Designer & Front-end Developer (remote)",
+  },
+]);
+</script>
+
 <template>
   <main class="container">
     <section
@@ -96,6 +137,7 @@ const skills = ref([
         </div>
       </div>
     </section>
+
     <section
       class="relative flex flex-col items-center w-full mt-[-14%] md:mt-[16%]"
     >
@@ -776,6 +818,7 @@ const skills = ref([
         </svg>
       </div>
     </section>
+
     <section
       class="flex flex-col items-center w-[80%] mt-[14%] relative z-[90] lg:w-[90%]"
     >
@@ -815,5 +858,262 @@ const skills = ref([
         </p>
       </div>
     </section>
+
+    <section class="flex flex-col items-center mt-[260px] w-[90%] lg:mt-44">
+      <span class="font-semibold text-[4rem] text-center">Work / Projects</span>
+
+      <div class="mt-[60px] sm:w-full">
+        <h1 class="text-2xl mb-7"><strong>Experience:</strong></h1>
+
+        <ol class="relative border-l border-pj-grey-2 w-full">
+          <li v-for="exp in exps" :key="exp" class="mb-10 ml-4">
+            <div
+              class="absolute w-3 h-3 rounded-full -left-1.5 border border-pj-grey-2 bg-pj-grey-2"
+            ></div>
+            <time
+              class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+              >{{ exp.period }}</time
+            >
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              {{ exp.company }}
+            </h3>
+            <p class="mb-4 text-base font-normal text-gray-400">
+              {{ exp.position }}
+            </p>
+          </li>
+
+          <li class="mb-10 ml-4">
+            <div
+              class="absolute w-3 h-3 rounded-full -left-1.5 border border-pj-grey-2 bg-pj-grey-2"
+            ></div>
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              ...
+            </h3>
+          </li>
+        </ol>
+      </div>
+
+      <div
+        class="grid grid-flow-row auto-cols-fr gap-x-4 gap-y-40 grid-proj-content lg:gap-y-24 md:gap-y-[70px]"
+      >
+        <div class="flex flex-col items-center">
+          <img
+            src="https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fcd6cfdeaec3ea6669e10_image_processing20211009-29972-1eums2r.png"
+            loading="lazy"
+            sizes="(max-width: 767px) 90vw, (max-width: 991px) 44vw, 45vw"
+            srcset="
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fcd6cfdeaec3ea6669e10_image_processing20211009-29972-1eums2r-p-500.png   500w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fcd6cfdeaec3ea6669e10_image_processing20211009-29972-1eums2r-p-800.png   800w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fcd6cfdeaec3ea6669e10_image_processing20211009-29972-1eums2r-p-1080.png 1080w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fcd6cfdeaec3ea6669e10_image_processing20211009-29972-1eums2r.png        1600w
+            "
+            alt="project-cover"
+            class="project-cover"
+          />
+
+          <span class="text-[2.5rem] text-center">African Pot</span>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <img
+            src="https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fce5d3c573c3c09e2e29f_sag_index.png"
+            loading="lazy"
+            sizes="(max-width: 767px) 90vw, (max-width: 991px) 44vw, 45vw"
+            srcset="
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fce5d3c573c3c09e2e29f_sag_index-p-500.png   500w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fce5d3c573c3c09e2e29f_sag_index-p-800.png   800w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fce5d3c573c3c09e2e29f_sag_index-p-1080.png 1080w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fce5d3c573c3c09e2e29f_sag_index-p-1600.png 1600w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fce5d3c573c3c09e2e29f_sag_index-p-2000.png 2000w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fce5d3c573c3c09e2e29f_sag_index.png        2100w
+            "
+            alt="project-cover"
+            class="project-cover"
+          />
+
+          <span class="text-[2.5rem] text-center">SendAmGo</span>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <img
+            src="https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fcd6b690057de9c107c0f_image_processing20211210-32274-1wyy8u4.png"
+            loading="lazy"
+            sizes="(max-width: 767px) 90vw, (max-width: 991px) 44vw, 45vw"
+            srcset="
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fcd6b690057de9c107c0f_image_processing20211210-32274-1wyy8u4-p-500.png   500w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fcd6b690057de9c107c0f_image_processing20211210-32274-1wyy8u4-p-800.png   800w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fcd6b690057de9c107c0f_image_processing20211210-32274-1wyy8u4-p-1080.png 1080w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fcd6b690057de9c107c0f_image_processing20211210-32274-1wyy8u4.png        1594w
+            "
+            alt="project-cover"
+            class="project-cover"
+          />
+
+          <span class="text-[2.5rem] text-center">Boolean Ra</span>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <img
+            src="https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd00c635c041c9551e174_sui%20for%20dribbble2.png"
+            loading="lazy"
+            sizes="(max-width: 767px) 90vw, (max-width: 991px) 44vw, 45vw"
+            srcset="
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd00c635c041c9551e174_sui%20for%20dribbble2-p-500.png   500w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd00c635c041c9551e174_sui%20for%20dribbble2-p-800.png   800w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd00c635c041c9551e174_sui%20for%20dribbble2-p-1080.png 1080w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd00c635c041c9551e174_sui%20for%20dribbble2-p-1600.png 1600w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd00c635c041c9551e174_sui%20for%20dribbble2.png        1920w
+            "
+            alt="project-cover"
+            class="project-cover"
+          />
+
+          <span class="text-[2.5rem] text-center">Suijen</span>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <img
+            src="https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fcd6bff7b308875698494_image_processing20211009-30778-h54ymh.png"
+            loading="lazy"
+            sizes="(max-width: 767px) 90vw, (max-width: 991px) 44vw, 45vw"
+            srcset="
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fcd6bff7b308875698494_image_processing20211009-30778-h54ymh-p-500.png   500w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fcd6bff7b308875698494_image_processing20211009-30778-h54ymh-p-800.png   800w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fcd6bff7b308875698494_image_processing20211009-30778-h54ymh-p-1080.png 1080w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fcd6bff7b308875698494_image_processing20211009-30778-h54ymh.png        1600w
+            "
+            alt="project-cover"
+            class="project-cover"
+          />
+
+          <span class="text-[2.5rem] text-center">Otium Circle</span>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <img
+            src="https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fcd6b635c04a1de51c7ff_image_processing20211216-19445-puxika.png"
+            loading="lazy"
+            sizes="(max-width: 767px) 90vw, (max-width: 991px) 44vw, 45vw"
+            srcset="
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fcd6b635c04a1de51c7ff_image_processing20211216-19445-puxika-p-500.png   500w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fcd6b635c04a1de51c7ff_image_processing20211216-19445-puxika-p-800.png   800w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fcd6b635c04a1de51c7ff_image_processing20211216-19445-puxika-p-1080.png 1080w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fcd6b635c04a1de51c7ff_image_processing20211216-19445-puxika.png        1600w
+            "
+            alt="project-cover"
+            class="project-cover"
+          />
+
+          <span class="text-[2.5rem] text-center">SendAmGo Design System</span>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <img
+            src="https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd0c4382e575a5bd97326_golo_system.png"
+            loading="lazy"
+            sizes="(max-width: 767px) 90vw, (max-width: 991px) 44vw, 45vw"
+            srcset="
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd0c4382e575a5bd97326_golo_system-p-500.png   500w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd0c4382e575a5bd97326_golo_system-p-800.png   800w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd0c4382e575a5bd97326_golo_system-p-1600.png 1600w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd0c4382e575a5bd97326_golo_system-p-2000.png 2000w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd0c4382e575a5bd97326_golo_system-p-2600.png 2600w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd0c4382e575a5bd97326_golo_system.png        3200w
+            "
+            alt="project-cover"
+            class="project-cover"
+          />
+
+          <span class="text-[2.5rem] text-center">Golo Design System</span>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <img
+            src="https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd2ca980e16f00afff89d_RideOn.png"
+            loading="lazy"
+            sizes="(max-width: 767px) 90vw, (max-width: 991px) 44vw, 45vw"
+            srcset="
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd2ca980e16f00afff89d_RideOn-p-500.png   500w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd2ca980e16f00afff89d_RideOn-p-1080.png 1080w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd2ca980e16f00afff89d_RideOn-p-1600.png 1600w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd2ca980e16f00afff89d_RideOn.png        1800w
+            "
+            alt="project-cover"
+            class="project-cover"
+          />
+
+          <span class="text-[2.5rem] text-center">RideOn</span>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <img
+            src="https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd2cac2e57ba5f4b679f6_brainfood.png"
+            loading="lazy"
+            sizes="(max-width: 767px) 90vw, (max-width: 991px) 44vw, 45vw"
+            srcset="
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd2cac2e57ba5f4b679f6_brainfood-p-500.png   500w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd2cac2e57ba5f4b679f6_brainfood-p-800.png   800w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd2cac2e57ba5f4b679f6_brainfood-p-1080.png 1080w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd2cac2e57ba5f4b679f6_brainfood.png        1800w
+            "
+            alt="project-cover"
+            class="project-cover"
+          />
+
+          <span class="text-[2.5rem] text-center">Brainfood</span>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <img
+            src="https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd1e4d5e1a0c0a035d942_index%20v4.png"
+            loading="lazy"
+            sizes="(max-width: 767px) 90vw, (max-width: 991px) 44vw, 45vw"
+            srcset="
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd1e4d5e1a0c0a035d942_index%20v4-p-500.png   500w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd1e4d5e1a0c0a035d942_index%20v4-p-800.png   800w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd1e4d5e1a0c0a035d942_index%20v4-p-1080.png 1080w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd1e4d5e1a0c0a035d942_index%20v4-p-1600.png 1600w,
+              https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/621fd1e4d5e1a0c0a035d942_index%20v4.png        1920w
+            "
+            alt="project-cover"
+            class="project-cover object-left-top"
+          />
+
+          <span class="text-[2.5rem] text-center">Nicci</span>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
+
+<style lang="scss" scoped>
+.ibox {
+  @apply flex flex-col items-start px-9 py-6 rounded-[20px] border border-pj-grey-2;
+}
+
+.grid-c-content {
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+
+  @screen md {
+    grid-template-columns: 100%;
+  }
+}
+
+.grid-proj-content {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+
+  @screen md {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-cover {
+  @apply mb-10 w-full h-[571px] object-cover lg:mb-5 lg:h-[371px] md:h-[471px];
+}
+
+.d-bg {
+  background-image: url("https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/6218efafb9663491c05f3103_milad-fakurian-d4lv5slqeqY-unsplash.jpg");
+}
+</style>
