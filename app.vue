@@ -1,3 +1,21 @@
+import Skill from "./components/skill.vue";
+
+const skills = ref([
+  "Figma",
+  "Adobe XD",
+  "Html/CSS 3",
+  "SASS",
+  "Tailwind CSS",
+  "Javascript",
+  "Vue.js/Nuxt",
+  "Node.js",
+  "Webflow",
+  "User Research",
+  "Rapid Prototyping",
+  "Wireframe",
+  "Art Direction",
+  "User Experience Design",
+]);
 <template>
   <main class="container">
     <section
@@ -756,6 +774,45 @@
             </clipPath>
           </defs>
         </svg>
+      </div>
+    </section>
+    <section
+      class="flex flex-col items-center w-[80%] mt-[14%] relative z-[90] lg:w-[90%]"
+    >
+      <span
+        class="text-[2.2rem] text-white/50 lg:text-[1.6rem] md:text-[1.4rem]"
+        >Skills</span
+      >
+
+      <div
+        class="flex flex-wrap content-center items-center justify-center mt-[5%] w-full"
+      >
+        <Skill v-for="skill in skills" :key="skill" :name="skill" />
+      </div>
+
+      <div
+        class="flex justify-center mt-[13%] lg:w-[90%] md:flex-col md:items-center md:mt-[24%]"
+      >
+        <svg
+          width="464"
+          viewBox="0 0 464 462"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="max-w-full mr-12 lg:w-[50%] md:mr-0 md:w-[80%]"
+        >
+          <path
+            d="M445.776 8.88004H463.536V452.88H445.776V317.016C428.608 360.824 400.784 396.048 362.304 422.688C323.824 448.736 280.312 461.76 231.768 461.76C167.24 461.76 112.48 439.56 67.488 395.16C22.496 350.76 0 296 0 230.88C0 165.76 22.496 111 67.488 66.6C112.48 22.2 167.24 0 231.768 0C280.312 0 323.824 13.32 362.304 39.96C400.784 66.008 428.608 100.936 445.776 144.744V8.88004ZM79.92 383.616C121.36 425.056 171.976 445.776 231.768 445.776C291.56 445.776 342.176 425.056 383.616 383.616C425.056 342.176 445.776 291.264 445.776 230.88C445.776 170.496 425.056 119.584 383.616 78.144C342.176 36.704 291.56 15.984 231.768 15.984C171.976 15.984 121.36 36.704 79.92 78.144C38.48 119.584 17.76 170.496 17.76 230.88C17.76 291.264 38.48 342.176 79.92 383.616Z"
+            fill="white"
+          />
+        </svg>
+
+        <p
+          class="w-[368px] text-[2.25rem] lg:w-[268px] lg:text-[1.8rem] md:w-[80%] md:mt-16 md:text-center"
+        >
+          Typography can make or break a digital product. It can change the
+          Aesthetic-Usability Effect of the UI/UX. I've spent a lot of time with
+          a masterful command of type.
+        </p>
       </div>
     </section>
   </main>
