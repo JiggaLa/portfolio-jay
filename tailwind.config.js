@@ -36,6 +36,7 @@ module.exports = {
       colors: {
         "pj-black": "#0f0f0f",
         "pj-grey-1": "#cfcfcf",
+        "pj-grey-2": "#343434",
       },
     },
   },
