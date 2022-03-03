@@ -1083,6 +1083,15 @@ const exps = ref([
         </div>
       </div>
     </section>
+
+    <footer class="flex flex-col items-center justify-center mt-52">
+      <a
+        href="mailto:la.japh@gmail.com?subject=Hi Japh 👋"
+        class="flex flex-col items-center justify-center w-[400px] h-[400px] rounded-[50%] border-dashed border-4 border-white md:w-[56vw] md:h-[56vw] cursor-pointer"
+      >
+        <span class="text-[5rem] md:text-[12vw]">Say hi!</span>
+      </a>
+    </footer>
   </main>
 </template>
 
