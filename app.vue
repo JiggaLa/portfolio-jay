@@ -125,8 +125,14 @@ const exps = ref([
         <div class="h-full w-[300px] md:w-full">
           <div class="ibox w-full items-center">
             <span class="text-[1.1rem] text-white/50 text-center"
-              >Years of<br />Experience</span
+              >Education</span
             >
+            <p class="text-[1.3rem] leading-[1.5] text-center">
+              Software Engineering
+            </p>
+            <p class="text-[1rem] leading-[1.5] text-center">
+              Eastern Mediterranean University
+            </p>
           </div>
 
           <p class="mt-[40%] text-[1.5rem] md:mt-[10%]">
