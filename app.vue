@@ -64,7 +64,7 @@ const exps = ref([
     >
       <span
         class="text-center text-[3.5rem] text-pj-grey-1 mb-[5%] lg:mb-[18%] lg:text-5xl md:w-[80%] md:text-[2rem] md:mb-[14%] md:mt-[-12%] sm:mt-[24%]"
-        >UI/UX Designer &<br />Frontend Developer</span
+        >UI/UX Designer &<br />Frontend Developer 👌🏾</span
       >
 
       <span
