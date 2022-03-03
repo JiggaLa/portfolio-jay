@@ -1,5 +1,5 @@
 <script setup>
-import Skill from "./components/skill.vue";
+import Skill from "~/components/Skill.vue";
 
 const skills = ref([
   "Figma",
