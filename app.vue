@@ -95,7 +95,7 @@ const exps = ref([
       </p>
 
       <div
-        class="w-full relative z-[100] overflow-x-auto grid grid-flow-col auto-cols-auto gap-[40px] grid-c-content justify-start items-start content-start mt-24 xl:pl-[10vw] xl:pr-16 md:overflow-hidden md:w-[90%] md:px-0 md:auto-cols-[100%] md:grid-flow-row"
+        class="no-scrollbar w-full relative z-[100] overflow-x-auto grid grid-flow-col auto-cols-auto gap-[40px] grid-c-content justify-start items-start content-start mt-24 xl:pl-[10vw] xl:pr-16 md:overflow-hidden md:w-[90%] md:px-0 md:auto-cols-[100%] md:grid-flow-row"
       >
         <div class="ibox w-[300px] md:w-full md:items-center">
           <span class="text-[1.1rem] text-white/50">Contact</span>
@@ -1124,5 +1124,13 @@ const exps = ref([
 
 .d-bg {
   background-image: url("https://uploads-ssl.webflow.com/621786a6c9dfd308dc2d9871/6218efafb9663491c05f3103_milad-fakurian-d4lv5slqeqY-unsplash.jpg");
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 </style>
