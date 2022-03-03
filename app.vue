@@ -1,4 +1,6 @@
 <script setup>
+import Skill from "./components/skill.vue";
+
 const skills = ref([
   "Figma",
   "Adobe XD",
