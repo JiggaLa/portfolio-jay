@@ -97,9 +97,9 @@ const exps = ref([
       <div
         class="no-scrollbar w-full relative z-[100] overflow-x-auto grid grid-flow-col auto-cols-auto gap-[40px] grid-c-content justify-start items-start content-start mt-24 xl:pl-[10vw] xl:pr-16 md:overflow-hidden md:w-[90%] md:px-0 md:auto-cols-[100%] md:grid-flow-row"
       >
-        <div class="ibox w-[300px] md:w-full md:items-center">
+        <div class="ibox w-[300px] md:w-full items-center">
           <span class="text-[1.1rem] text-white/50">Contact</span>
-          <p class="text-[1.3rem] leading-[1.5] md:text-center">
+          <p class="text-[1.3rem] leading-[1.5] text-center">
             Ammochostos, Cyprus<br />la.japh@gmail.com<br />+905338433770
           </p>
         </div>
