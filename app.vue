@@ -4,6 +4,7 @@ import Skill from "~/components/Skill.vue";
 const skills = ref([
   "Figma",
   "Adobe XD",
+  "Framer",
   "Html/CSS 3",
   "SASS",
   "Tailwind CSS",
