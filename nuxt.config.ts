@@ -43,6 +43,13 @@ export default defineNuxtConfig({
     rootTag: "main",
   },
 
+  alias: {
+    "@stores": "/stores",
+    "@assets": "/assets",
+    "@img": "/assets/img",
+    "@js": "/js",
+  },
+
   css: ["@/assets/css/main.css", "@/assets/css/3-basics/base.css"],
 
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/html-validator"],
