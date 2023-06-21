@@ -984,6 +984,29 @@ const exps = ref([
         <div
           class="w-full flex items-center gap-8 md:flex-col md:items-start md:gap-2"
         >
+          <h1 class="text-[4rem] font-medium lg:text-[4rem] md:text-[2rem]">
+            Hi Medic Search Component
+          </h1>
+          <span
+            class="text-[1.25rem] font-medium uppercase px-3 py-2 bg-black rounded-[11px] md:text-base"
+            >Component</span
+          >
+        </div>
+
+        <img
+          src="/img/searchcomponent.png"
+          loading="lazy"
+          alt="case-study"
+          class="w-[110%] object-contain object-center"
+        />
+      </div>
+
+      <div
+        class="w-full p-16 mb-10 gap-4 flex flex-col bg-white/[0.06] lg:p-10 md:p-6"
+      >
+        <div
+          class="w-full flex items-center gap-8 md:flex-col md:items-start md:gap-2"
+        >
           <h1 class="text-[6rem] font-medium lg:text-[4rem] md:text-[2rem]">
             FreeMind
           </h1>
