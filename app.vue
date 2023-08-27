@@ -97,7 +97,7 @@ const exps = ref([
         class="text-[2.2rem] text-center w-[807px] mt-6 lg:w-[60%] lg:text-[1.6rem] md:w-[80%] md:text-[1.4rem]"
       >
         Work for money and design and develop for love! I'm Japheth, a UX/UI
-        designer and front-end developer based in Cyprus.
+        designer and front-end developer based in South Africa.
       </p>
 
       <div
@@ -106,7 +106,7 @@ const exps = ref([
         <div class="ibox w-[300px] md:w-full items-center">
           <span class="text-[1.1rem] text-white/50">Contact</span>
           <p class="text-[1.3rem] leading-[1.5] text-center">
-            Ammochostos, Cyprus<br />la.japh@gmail.com<br />+905338433770
+            Cape Town, South Africa<br />la.japh@gmail.com
           </p>
         </div>
 
